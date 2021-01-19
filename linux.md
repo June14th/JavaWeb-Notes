@@ -82,6 +82,7 @@ linus在1991年开发，linux的内核程序，后来很多软件开发组织以
        su zhangsan
        *从权限高的用户切换权限低的用户，不需要密码验证；
         从权限低的用户切换到权限高的用户，必须密码验证。
+	
 #8、linux中的组管理：
 1)、linux中的组相当于角色的概念，可以对有共性的用户进行统一管理；
     每一个用户至少属于一个组，不能独立于组存在，也可以属于多个组；
@@ -96,12 +97,14 @@ linus在1991年开发，linux的内核程序，后来很多软件开发组织以
          gpasswd -d zhangsan dev
 6)、添加用户时，指定所属的组(主组)：useradd -g 组名 用户名
          useradd -g dev lisi
+	 
 #9、linux中的系统操作命令：
 -    关机：shutdown now  立即关机
           shutdown -h xxx  定时关机
 	  shutdown -r now  立即重启
  -  重启：reboot  立即重启
  -  同步数据库：sync
+ 
 #10、linux中的帮助命令：
 1)、用来查看linux系统手册上的帮助信息：man 命令
        man ls
